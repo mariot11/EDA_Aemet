@@ -1,3 +1,11 @@
 # Entornos virtuales
 .env
 .venv/
+
+# Datos pesados
+data/raw/
+data/processed/
+
+#Archivos temporales de Python y Jupyter
+__pycache__/
+.ipynb_checkpoints/
