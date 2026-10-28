@@ -1,6 +1,7 @@
 # Entornos virtuales
 .env
 .venv/
+tests/
 
 # Datos pesados
 data/raw/
