@@ -14,7 +14,7 @@ load_dotenv()  # Carga las variables del fichero .env como variables de entorno
 AEMET_BASE_URL = "https://opendata.aemet.es/opendata/api/valores/climatologicos/mensualesanuales/datos"
 
 api_key = os.getenv("AEMET_API_KEY")  # None si la variable no existe
-anio_inicial = 2021
+anio_inicial = 1991
 anio_limite = 2025
 estacion = "8416"
 datos = []
@@ -66,7 +66,7 @@ for anio in range(anio_inicial, anio_limite +1):
     except requests.exceptions.RequestException as e:
         print("Error en la solicitud:", e)
 
-    time.sleep(1)
+    time.sleep(3)
 
 os.makedirs("data", exist_ok=True)
 nombre_archivo = "data/datos_climatologicos_valencia.json"
